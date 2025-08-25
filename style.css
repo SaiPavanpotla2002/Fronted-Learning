@@ -1,0 +1,455 @@
+
+/* .header {
+    border: 1px solid;
+    position: fixed;
+    top: 1%;
+    z-index: 1;
+} */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 15vh;
+   background-color: burlywood;
+}
+.tag-nav {
+font-size: 2rem;
+font-family: cursive;
+font-weight: bold;
+font-style: italic;
+padding-left: 7vw;
+color: red;
+animation-name: logo;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+}
+@keyframes logo {
+    from {
+        color: red;
+    }
+    To {
+        color: red;
+        transform: translate(5vh) scale(1.2);
+        letter-spacing: 0.3vw;
+        text-shadow: -7px 4px black;
+    }
+}
+.tag-1 {
+    text-decoration: none;
+    padding-left: 17vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+.tag-2 {
+    text-decoration: none;
+    padding-left:2vw;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+.tag-3 {
+    text-decoration: none;
+    padding-left: 2vw;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+.tag-4 {
+    text-decoration: none;
+    padding-left: 2vw;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+.tag-5 {
+    text-decoration: none;
+    padding-left: 10vw;
+}
+.tag-6 {
+    text-decoration: none;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
+}
+.tag5-5 {
+     border: 1.5px solid;
+    height: 5vh;
+    width: 12vw;
+    text-align: center;
+    padding-top: 2.5vh;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    background-color: #00bbd4;
+}
+.tag6-6 {
+     border: 1.5px solid;
+    height: 5vh;
+    width: 12vw;
+    text-align: center;
+    padding-top: 2.5vh;
+     border-radius: 0.5rem;
+      color: whitesmoke;
+      background-color: crimson;
+}
+.tag5-5:hover{
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+     transform: scale(0.9);
+}
+.tag6-6:hover {
+     background-color: deeppink;
+    color: white;
+     text-decoration: underline;
+     transform: scale(0.9);
+}
+.tag-nav:hover {
+    color: snow;
+    text-shadow: 2px 2px 4px blue;
+}
+.tag1-1:hover {
+    font-family: cursive;
+    color: lime;
+    text-shadow: 2px 2px 4px black;
+}
+.tag2-2:hover {
+    font-family: cursive;
+    color: royalblue;
+    text-shadow: 2px 2px 4px red;
+}
+.tag4-4:hover {
+    font-family: cursive;
+    color: orangered;
+    text-shadow: 2px 2px 4px black;
+}
+/* HERO SECTION */
+
+.Hero {
+    height: 81vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 13vh;
+    gap: 6vw;
+    background-color: rgba(255, 228, 196, 0.708);
+}
+.he-1 {
+    font-family: cursive;
+   padding-bottom: 6vh;
+   color: rgba(0, 0, 255, 0.61);
+}
+.ull li {
+    font-style: oblique;
+    font-weight: bold;
+}
+.he-2 {
+     padding-top: 4vh;
+    font-style: oblique;
+    font-weight: lighter;
+    color: crimson;
+}
+.image {
+    padding-left: 1.5vw;
+color: white;
+border: none;
+}
+.hero-1 {
+    padding-left: 5vw;
+}
+.Hero:hover .hero-1 {
+ transform: translateY(-4vh) skewX(-10deg) scaleY(1.1);
+ transition-duration: 2s;
+color: firebrick;
+ text-shadow: 5px 5px 10px pink;
+}
+.Hero:hover .image{
+  transform: skew(4deg);
+  transition-duration: 1.5s;
+}
+
+/* Fronted  */
+
+.fronted {
+    width: 100vw;
+    height: 120vh;
+    margin-top: 10vh;
+    background-color: rgba(100, 148, 237, 0.694);
+}
+.heading-tag2 {
+    text-align: center;
+    padding-top: 10vh;
+    font-family: fantasy;
+    font-weight: lighter;
+    color: rgba(165, 42, 42, 0.888);
+    transform: skewX(10deg);
+    line-height: 6vh;
+    animation-name: sai;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    scroll-behavior: smooth;
+}
+@keyframes sai {
+    from {
+        text-align: center;
+    }
+    to {
+        text-align: justify;
+        transform: translateX(40vw) scale(1.2);
+        transition-duration: 5s;
+    }
+}
+span {
+    color: chartreuse;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.image-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10vh;
+    column-gap: -10vw;
+    padding-top: 4vh;
+    padding-left: 14vw;
+    padding-right: 10vw;
+}
+.img-1 {
+    width: 35vw;
+    height: 36vh;
+    border: 2% solid rgba(100, 148, 237, 0.694);
+    border-radius: 5%;
+}
+.img-2 {
+    width: 35vw;
+    height: 36vh;
+     border: 2% solid rgba(100, 148, 237, 0.694);
+    border-radius: 5%;
+}
+.img-3 {
+    width: 35vw;
+    height: 36vh;
+     border: 2% solid rgba(100, 148, 237, 0.694);
+    border-radius: 5%;
+}
+.img-4 {
+    width: 35vw;
+    height: 36vh;
+     border: 2% solid rgba(100, 148, 237, 0.694);
+    border-radius: 5%;
+}
+.fronted:hover .img-img-1 {
+   transform: translate(-4vw) scale(1.1) skew(4deg);
+   transition-duration: 2s;
+}
+.fronted:hover .img-img-2 {
+   transform: translate(4vw) scale(1.1) skew(-6deg);
+   transition-duration: 2s;
+}
+.fronted:hover {
+    background-color: mediumseagreen;
+}
+
+/* Choosed Fronted */
+
+.blog {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+    margin-top: 10vh;
+    padding-top: 30vh;
+    background-color: rgba(128, 255, 0, 0.457);
+}
+.blog-1 {
+    color: dodgerblue;
+}
+.divv {
+    padding: 2rem;
+    line-height: 1.4rem;
+}
+.blog:hover .divv{
+    text-shadow: -1px 1px  black;
+    font-size: 1.3rem;
+}
+.blog-3 {
+    border: 0.5rem double;
+    border-radius: 25rem;
+}
+.blog:hover .divv {
+    transform: translateX(10vw) scaleX(1.5);
+    transition-duration: 3s;
+    color: tomato;
+    line-height: 1.6rem;
+}
+.blog:hover .blog-3 {
+    transform: translateX(2vw) scale(0.8) rotate(360deg) translateY(20vh);
+    transition-delay: 0.2s;
+    transition-duration: 3s;
+    border-radius: 60%;
+    background-color: white;
+}
+.blog:hover{
+     background-color: pink;
+}
+
+/* About */ 
+
+.About {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10vh;
+    background-color: rgba(255, 255, 0, 0.445);
+}
+.about-1 {
+     font-size: 2rem;
+     text-align: center;
+     padding-top: 20vh;
+     padding-bottom: 8vh;
+     color: crimson;
+}
+.about-2 {
+    font-family: fantasy;
+    padding: 0.5rem;
+}
+.about-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.div-blog-1 {
+    width: 25vw;
+    height: 50vh;
+    border: 1px solid yellow;
+}
+.div-blog-2 {
+    width: 25vw;
+    height: 50vh;
+    border: 1px solid yellow;
+}
+.div-blog-3 {
+    width: 25vw;
+    height: 50vh;
+    border: 1px solid yellow;
+}
+.fa-solid {
+   padding-left: 10vw;
+   font-size: 2rem;
+}
+.div-blog-1:hover {
+    transform: translateX(1vw) scale(0.8);
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+.div-blog-2:hover {
+    transform: translate(-1vw) scale(0.8);
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+.div-blog-3:hover {
+    transform: translateX(-1vw) scale(0.8);
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+.About:hover .div-blog-1 {
+     transform: translateX(2vw) scale(0.8);
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+.About:hover .div-blog-2 {
+     transform: translateX(0.1vw) scale(0.8);
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+.About:hover .div-blog-3 {
+     transform: translateX(-2vw) scale(0.8);
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+.About:hover {
+    background-color: lightcyan;
+}
+
+/* Footer */ 
+
+.foot {
+      background: #111111aa;
+      color: #ddd;
+      padding: 5vh 5vw; 
+      text-align: center;
+      margin-top: 10vh;
+    }
+
+    .foot h2 {
+      color: #fff;
+       margin-bottom: 2vh;
+       font-size: 2vw;   
+    }
+
+    .foot p {
+     margin: 1vh 0;
+     font-size: 1.2vw;
+    }
+
+    .footer-links {
+     margin: 3vh 0;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 2vw;
+      transition: 0.3s;
+      font-size: 1.1vw;
+    }
+
+    .footer-links a:hover {
+      color: #00bcd4;
+    }
+
+    .social-icons {
+     margin: 3vh 0;
+    }
+
+    .social-icons a {
+      margin: 0 1vw;
+      display: inline-block;
+      color: #ddd;
+      font-size: 1.5vw;  
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00bcd4;
+    }
+
+    .copyright {
+    margin-top: 3vh;
+    font-size: 1vw;
+    color: #aaa;
+    }
+    .foot:hover {
+        background-color: rgb(0, 0, 0);
+    }
