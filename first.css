@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.h1 {
+    background-color: rgba(255, 255, 255, 0.068);
+    color: rgba(220, 20, 60, 0.452);
+    height: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+    font-weight: bold;
+    font-family: fantasy;
+    position: sticky;
+    z-index: 1;
+    top:2vh;
+    text-shadow: -3px -3px  black;
+  letter-spacing: 0.4vw;
+}
+.h1:hover {
+  text-shadow: -3px -3px  white;
+  letter-spacing: 0.4vw;
+}
+.Hero {
+    box-sizing: border-box;
+    height: 90vh;
+    display: flex;
+   justify-content: space-evenly;
+   padding-top: 20vh;
+   background-color: aquamarine;
+   animation: name;
+   animation-iteration-count: infinite;
+   animation-duration: 4s;
+}
+@keyframes name {
+  from {
+    background-color: aquamarine;
+  }
+  to {
+     background-color: black;
+     transform: translateY(-15vh);
+  }
+}
+.hero-1 {
+    width: 55vw;
+}
+.hero-2 {
+    font-family: cursive;
+    color: crimson;
+}
+.hero-3 {
+    font-style: italic;
+    color: darkblue;
+    font-size: 1.2rem;
+}
+.hero-5 {
+    width: 25vw;
+    height: 60vh;
+}
+.Hero:hover .hero-2 {
+ color: #fff;
+}
+
+/* tags */
+
+.tags {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+    box-sizing: border-box;
+    background-color: rgba(100, 148, 237, 0.66);
+    padding-top: 20vh;
+    margin-top: 10vh;
+}
+.heading-tags {
+    padding: 1rem;
+}
+.para {
+    padding: 1rem;
+    width: 30vw;
+}
+.text-tags {
+    padding: 1rem;
+}
+.name {
+    color: rgba(255, 0, 0, 0.833);
+    margin-bottom: 1rem;
+}
+.name-1 {
+    color: black;
+    margin-bottom: 0.3rem;
+}
+.tags:hover .name-1 {
+  color: #fff;
+}
+.name-2 {
+    color: rgba(255, 0, 0, 0.833);
+    margin-bottom: 0.3rem;
+}
+.name-3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.name-4 {
+    color: rgba(255, 0, 0, 0.833);
+    margin-bottom: 0.6rem;
+}
+.name-5 {
+    color: black;
+    margin-bottom: 0.7rem;
+}
+.tags:hover .name-4 {
+  color: #fff;
+}
+.name-6 {
+    color: bisque;
+}
+.tags:hover .name-5 {
+  color: red;
+}
+
+.para-1 {
+    color: chartreuse;
+   margin-bottom: 1rem;
+}
+.para-2 {
+    color: black;
+}
+.tags:hover .para-2 {
+  color: #fff;
+}
+
+.text-1 {
+    color: deeppink;
+    margin-bottom: 1rem;
+}
+.text-2 {
+   color: darkorange;
+}
+.text-3 {
+    color: crimson;
+    margin-rop: 0.5rem;
+}
+.text-4 {
+    color: lawngreen;
+    margin-bottom: 0.5rem;
+}
+.text-5 {
+    color: purple;
+    margin-bottom: 0.5rem;
+}
+.tags:hover .text-5 {
+  color: #fff;
+}
+.text-6 {
+    color: deeppink;
+    margin-bottom: 1rem;
+}
+.tags:hover .heading-tags {
+  border: 2px solid black;
+  padding: 1rem;
+  height: 45vh;
+  border-radius: 1rem;
+  background-color: black;
+  transform: translateX(7px);
+}
+.tags:hover .para {
+  border: 2px solid black;
+  padding: 1rem;
+  height: 25vh;
+  border-radius: 1rem;
+  background-color: black;
+  transform: translateX(7px);
+}
+.tags:hover .text-tags {
+  border: 2px solid black;
+  padding: 1rem;
+  height: 45vh;
+  width: 20vw;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: black;
+  transform: translateX(7px);
+}
+.tags:hover {
+  background-color: #fff;
+}
+
+/* Image tag */
+.image{
+    box-sizing: border-box;
+  height: 100vh;
+  width: 98vw;
+  margin-top: 10vh;
+  background-color: rgba(255, 182, 193, 0.281);
+}
+.image img{
+    width: 90vw;
+    height: 90vh;
+    border: 1% solid;
+   /* padding-left: 10vw;
+   padding-top: 10vh; */
+   margin-left: 4vw;
+   margin-top: 6vh;
+   border-radius: 2rem;
+}
+.image-1:hover {
+  transform: scale(0.5);
+  transition-duration: 5s;
+   /* background-color: rgba(255, 182, 193, 0.281); */
+}
+
+/* forms */
+.new {
+      font-family: Arial, sans-serif;
+      background: #ffffff57;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-top: 10vh;
+
+    }
+    .form-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #555;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .new:hover .form-container {
+      background-color: lightsteelblue;
+      color: #fff;
+    }
+    .new:hover label {
+      color: white;
+    }
+    .new:hover {
+      background-color: lightsteelblue;
+    }
+
+    /* Footer */
+
+    .foot {
+      background: #111111aa;
+      color: #ddd;
+      padding: 5vh 5vw; 
+      text-align: center;
+      margin-top: 10vh;
+    }
+
+    .foot h2 {
+      color: #fff;
+       margin-bottom: 2vh;
+       font-size: 2vw;   
+    }
+
+    .foot p {
+     margin: 1vh 0;
+     font-size: 1.2vw;
+    }
+
+    .footer-links {
+     margin: 3vh 0;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 2vw;
+      transition: 0.3s;
+      font-size: 1.1vw;
+    }
+
+    .footer-links a:hover {
+      color: #00bcd4;
+    }
+
+    .social-icons {
+     margin: 3vh 0;
+    }
+
+    .social-icons a {
+      margin: 0 1vw;
+      display: inline-block;
+      color: #ddd;
+      font-size: 1.5vw;  
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00bcd4;
+    }
+
+    .copyright {
+    margin-top: 3vh;
+    font-size: 1vw;
+    color: #aaa;
+    }
+    .foot:hover {
+      background-color: black;
+    }
