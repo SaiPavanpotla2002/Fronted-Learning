@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header class="second-header">
+    <div class="second">
+        <div class="div">
+            <h1 class="div-1">What is CSS?</h1>
+            <ul class="ul">
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>It is used to style and design web pages created with HTML.</li>
+                <li>Controls colors, fonts, spacing, layouts, responsiveness, <br> animations, and much more.</li>
+            </ul>
+        </div>
+        <div class="div-2">
+           <h1 class="div-1">Types Of CSS</h1>
+           <h4 class="styles">Inline<<span>style as an attribute</span>></h4>
+           <h4 class="styles">Internal<<span>style as an tag</span>></h4>
+           <h4 class="styles">External<<span>links file to the HTML Document</span>></h4>
+        </div>
+        <div class="div-3">
+           <h1 class="div-1">CSS Selectors</h1>
+            <ul class="ul">
+                <li>Element Selector → p { color: green; }</li>
+                <li>Class Selector → .box { background: yellow; }</li>
+                <li>ID Selector → #title { font-size: 24px; }</li>
+                <li>Universal Selector → * { margin: 0; padding: 0; }</li>
+                <li>Group Selector → h1, h2, h3 { color: blue; }</li>
+                <li>Descendant Selector → div p { color: gray; }</li>
+            </ul>
+        </div>
+      </div>
+        <div class="div-img">
+            <img class="css-img" src="CSS3_logo_and_wordmark.svg.png" alt="">
+        </div>
+    </header>
+
+    <!-- CSS Properties -->
+     <section class="Properties">
+         <h1 class="prop-h1">CSS Properties</h1>
+         <div class="prop-div">
+            <h2 class="prop-h2">Color & Background</h2>
+            <ul class="prop-ul">
+              <li>color → Sets text color.</li>
+              <li>background-color → Sets background color.</li>
+              <li>background-image → Adds an image as background.</li>
+            </ul>
+            <div class="box">
+                <p class="prop-p">  body { <br>
+  background-color: lightgray;   /* page background */ <br>
+                } <br>
+                h1 { <br>
+  color: navy;                   /* text color */ <br>
+                } <br>
+div { <br>
+  background-image: url("bg.jpg"); /* background image */ <br>
+  background-size: cover;          /* cover full area */ <br>
+} </p>
+            </div>
+         </div>
+         <div class="prop-div">
+           <h2 class="prop-h2">Text Properties</h2>
+           <ul class="prop-ul">
+            <li>font-size → Controls text size.</li>
+            <li>font-family → Changes font style.</li>
+            <li>font-weight → Boldness (normal, bold, 100–900).</li>
+            <li>text-align → Aligns text (left, center, right, justify).</li>
+            <li>text-decoration → Underline, line-through, none.</li>
+           </ul>
+         </div>
+         <div class="box-1">
+              <p class="prop-p">p { <br>
+  font-size: 18px; <br>
+  font-family: Arial, sans-serif; <br>
+  font-weight: bold; <br>
+  text-align: center; <br>
+  text-decoration: underline; <br>
+}</p>
+         </div>
+     </section>
+
+     <!-- Box Model -->
+      
+     <section class="container">
+        <h1 class="prop-h1-1">Box Model</h1>
+         <div class="prop-div">
+            <h2 class="prop-h2-2">Container</h2>
+            <ul class="prop-ul-1">
+              <li>width / height → Size of the box.</li>
+              <li>padding → Space inside border.</li>
+              <li>border → Line around the box.</li>
+              <li>margin → Space outside border.</li>
+            </ul>
+            <div class="box-3">
+             <p class="prop-p"> 
+                div { <br>
+  width: 200px; <br>
+  height: 100px; <br>
+  padding: 10px;          /* inner space */ <br>
+  border: 2px solid black;/* border line */ <br>
+  margin: 20px;           /* outer gap */  <br>
+}
+             </p>
+            </div>
+             <div class="prop-div">
+           <h2 class="prop-h2-2">Positions</h2>
+           <ul class="prop-ul-1">
+            <li>position → Defines element’s position.</li>
+            <li>static (default)</li>
+            <li>relative (move based on itself)</li>
+            <li>absolute (relative to parent)</li>
+            <li>fixed (always in viewport)</li>
+            <li>sticky (sticks when scrolling)</li>
+           </ul>
+         </div>
+         
+         <div class="box-4">
+            <p class="prop-p">
+                .box { <br>
+  position: absolute; <br>
+  top: 50px; <br>
+  left: 100px; <br>
+}
+            </p>
+         </div>
+     </section>
+
+     <!-- Adjustments -->
+      <section class="layout">
+        <h1 class="prop-h1-2">Layouts</h1>
+         <div class="prop-div">
+            <h2 class="prop-h2-2">Flex Box-2D</h2>
+            <ul class="prop-ul-2">
+             <li>display: flex; → activates flexbox.</li>
+             <li>justify-content → horizontal alignment.</li>
+            <li>align-items → vertical alignment.</li>
+            <li>flex-direction → row or column.</li>
+            </ul>
+            <div class="box-5">
+             <p class="prop-p"> 
+              .container { <br>
+  display: flex; <br>
+  justify-content: center; /* center horizontally */ <br>
+  align-items: center;     /* center vertically */ <br>
+}
+             </p>
+            </div>
+             <div class="prop-div">
+           <h2 class="prop-h2-2">Grid Box-3D</h2>
+           <ul class="prop-ul-2">
+            <li>display: grid; → activates grid.</li>
+            <li>grid-template-columns → defines columns.</li>
+            <li>grid-template-Rows → defines rows.</li>
+            <li>gap → space between items.</li>
+           </ul>
+         </div>
+         
+         <div class="box-5">
+            <p class="prop-p">
+             .grid { <br>
+  display: grid; <br>
+  grid-template-columns: 1fr 1fr 1fr; <br>
+  gap: 10px; <br>
+}
+            </p>
+         </div>
+     </section>
+     <!-- footer -->
+
+     <footer class="foot">
+    <h2 class="foot-1">WebLaunch</h2>
+    <p class="foot-2">Launch your web dev career with HTML, CSS & JavaScript</p>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+    </div>
+
+    <div class="copyright">
+      © 2025 WebLaunch | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>
