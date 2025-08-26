@@ -469,7 +469,7 @@ span {
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-    width: 90vw;
+    width: 100vw;
     height: 30vh;
    background-color: burlywood;
 }
